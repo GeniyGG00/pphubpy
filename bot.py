@@ -483,7 +483,7 @@ async def message_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
             
             await update.message.reply_text(
                 '❌ <b>К сожалению, все товары закончились!</b>\n\n'
-                'Попробуйте зайти позже или свяжитесь с менеджером @Ferb_manger02',
+                'Попробуйте зайти позже или свяжитесь с менеджером @Promezytkina1',
                 parse_mode='HTML',
                 reply_markup=out_of_stock_menu
             )
@@ -603,10 +603,8 @@ async def message_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
             '• Гарантия качества\n\n'
             '💳 <b>Способы оплаты</b>\n'
             '💰 Наличными при встрече с менеджером\n\n'
-            '📍 <b>Наши контакты</b>\n'
-            '📢 Официальный канал: https://t.me/FerbshopPP\n\n'
-            '👨‍💼 <b>Менеджер:</b>\n'
-            '• @Ferb_manger02\n\n'
+                                    '👨‍💼 <b>Менеджер:</b>\n'
+            '• @Promezytkina1\n\n'
             '💬 По всем вопросам обращайтесь к менеджеру\n'
             '⏰ Работаем круглосуточно\n\n'
             '💯 <b>Мы работаем для вас!</b>'
@@ -850,7 +848,7 @@ async def message_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
             'Ваш заказ принят в обработку. Наш менеджер свяжется с вами в ближайшее время.\n\n'
             f'📦 <b>Номер вашего заказа:</b> #{len(orders)}\n'
             f'💬 <b>Ваш комментарий:</b> {"не указан" if user.comment == "Без комментария" else user.comment}\n\n'
-            'Для уточнения деталей заказа вы всегда можете обратиться к менеджеру @Ferb_manger02'
+            'Для уточнения деталей заказа вы всегда можете обратиться к менеджеру @Promezytkina1'
         )
         
         await update.message.reply_text(user_message, parse_mode='HTML', reply_markup=keyboard)
@@ -1020,4 +1018,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-    
